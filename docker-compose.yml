@@ -3,5 +3,5 @@ services:
     image: oumeidadi886/234-deploylab-frontend:latest
     pull_policy: always
     ports:
-      - "8081:80"
+      - "8083:80"
     restart: unless-stopped
