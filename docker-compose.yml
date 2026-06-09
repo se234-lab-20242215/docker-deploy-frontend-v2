@@ -3,5 +3,8 @@ services:
     image: oumeidadi886/234-deploylab-frontend:latest
     pull_policy: always
     ports:
-      - "8083:80"
+      - "8081:80"
+    environment:
+      - VITE_GRAPHQL_URI=http://54.234.171.31:8082/graphql
+      - VITE_SERVER_URI=http://54.234.171.31:8082
     restart: unless-stopped
